@@ -1,0 +1,22 @@
+models package
+==============
+
+Submodules
+----------
+
+models.resnet module
+--------------------
+
+.. automodule:: models.resnet
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: models
+   :members:
+   :undoc-members:
+   :show-inheritance:

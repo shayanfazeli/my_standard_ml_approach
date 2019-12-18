@@ -1,0 +1,11 @@
+my_standard_ml_approach
+=======================
+
+.. toctree::
+   :maxdepth: 4
+
+   datasets
+   models
+   my_ml_sample
+   tests
+   trainers

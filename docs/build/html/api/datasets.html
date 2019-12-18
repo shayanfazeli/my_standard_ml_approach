@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <title>datasets package &#8212; My Standard ML Approach 1.0.0 documentation</title>
+
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.3.1-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinxbootstrap4.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/sphinxbootstrap4.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="models package" href="models.html" />
+    <link rel="prev" title="Welcome to My Standard ML Approach’s documentation!" href="../index.html" /> 
+  </head><body>
+  <nav class="navbar navbar-expand-md  fixed-top navbar-dark bg-inverse flex-wrap">
+    <button class="navbar-toggler ml-auto py-2" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+      &#9776;
+    </button>
+      <div class="navbar-collapse collapse" id="exCollapsingNavbar2">
+           <a class="navbar-brand py-1" href="../index.html">
+                  My Standard ML Approach
+          </a>
+          <ul class="navbar-nav mr-auto">
+          
+              <li class="nav-item dropdown d-none d-sm-block" id="navbar-pages">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                  <ul class="dropdown-menu">
+                  <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">datasets package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-datasets.sample_task">datasets.sample_task module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-datasets">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="models.html">models package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="models.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="models.html#module-models.resnet">models.resnet module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="models.html#module-models">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">my_standard_ml_approach</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">datasets package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-datasets.sample_task">datasets.sample_task module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-datasets">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="models.html">models package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="models.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="models.html#module-models.resnet">models.resnet module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="models.html#module-models">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="my_ml_sample.html">my_ml_sample module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html">tests package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tests.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html#module-tests.tests">tests.tests module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html#module-tests">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="trainers.html">trainers package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="trainers.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="trainers.html#module-trainers.basic">trainers.basic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="trainers.html#module-trainers">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="my_ml_sample.html">my_ml_sample module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tests.html">tests package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tests.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html#module-tests.tests">tests.tests module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html#module-tests">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="trainers.html">trainers package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="trainers.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trainers.html#module-trainers.basic">trainers.basic module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trainers.html#module-trainers">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+                  </ul>
+              </li>
+              <li class="nav-item">
+              <a  class="nav-link" href="../index.html">Home</a></li>
+              <li class="nav-item">
+              
+                  <a  class="nav-link" href="http://example.com">Link</a></li>
+          </ul>
+          <div class="dropdown-divider d-block d-sm-none mb-4"></div>
+             
+<form class="form-inline" action="../search.html" method="get">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <!--<div class="row hidden-sm-up">
+          <div class="collapse navbar-toggleable-xs container" id="exCollapsingNavbar2">
+              <div class="container">
+             　　 <a class="navbar-brand" href="../index.html">
+                      My Standard ML Approach
+                  </a>
+              </div>
+              <ul class="nav navbar-nav">
+                  <li>
+                  <a  class="nav-link" href="../index.html">Home</a></li>
+                  <li>
+                  
+                      <a  class="nav-link" href="http://example.com">Link</a></li>
+              </ul>
+              <div class="dropdown-divider"></div>
+              <div class="navbar-text">search<div>
+              
+<form class="form-inline" action="../search.html" method="get">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          </div>
+      </div>-->
+    </nav>
+  </div>
+
+    <div class="related d-flex justify-content-between bg-light flex-wrap" role="navigation" aria-label="related navigation">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">My Standard ML Approach 1.0.0 documentation</a></li>
+            <li class="breadcrumb-item active">datasets package</li>
+        </ol>
+       <div>
+          <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+               <a href="../index.html" title="Previous Chapter: Welcome to My Standard ML Approach’s documentation!" class="btn btn-primary" role="botton" accesskey="P">
+                   &laquo; Welcome to My...
+               </a>
+               <a href="models.html" title="Next Chapter: models package" class="btn btn-primary" role="botton" accesskey="N">
+                   models package &raquo;
+               </a>
+           </div>
+       </div>
+    </div>
+
+  <div class="main container-fluid">
+    <div class="row"> 
+      <div class="sphinxsidebar d-none d-md-block">
+        <div class="sphinxsidebarwrapper">          
+            <h4>Table Of Contents</h4>
+            
+            
+              <div class="sidebartoctree">
+                <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">datasets package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-datasets.sample_task">datasets.sample_task module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-datasets">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="models.html">models package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="models.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="models.html#module-models.resnet">models.resnet module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="models.html#module-models">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">my_standard_ml_approach</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">datasets package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-datasets.sample_task">datasets.sample_task module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-datasets">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="models.html">models package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="models.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="models.html#module-models.resnet">models.resnet module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="models.html#module-models">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="my_ml_sample.html">my_ml_sample module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html">tests package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tests.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html#module-tests.tests">tests.tests module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html#module-tests">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="trainers.html">trainers package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="trainers.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="trainers.html#module-trainers.basic">trainers.basic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="trainers.html#module-trainers">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="my_ml_sample.html">my_ml_sample module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tests.html">tests package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tests.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html#module-tests.tests">tests.tests module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html#module-tests">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="trainers.html">trainers package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="trainers.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trainers.html#module-trainers.basic">trainers.basic module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trainers.html#module-trainers">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            
+          
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../index.html"
+                        title="previous chapter">Welcome to My Standard ML Approach’s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="models.html"
+                        title="next chapter">models package</a></p>
+<div id="searchbox" style="display: none">
+    <form class="form search" action="../search.html" method="get">
+      <input type="text" name="q" class="form-control" placeholder="Search..." />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+
+<script type="text/javascript">$('#searchbox').show(0);</script>
+  <ul class="this-page-menu list-unstyled text-right">
+    <li><a href="../_sources/api/datasets.rst.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+        </div>
+      </div> 
+
+      <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="datasets-package">
+<h1>datasets package<a class="headerlink" href="#datasets-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-datasets.sample_task">
+<span id="datasets-sample-task-module"></span><h2>datasets.sample_task module<a class="headerlink" href="#module-datasets.sample_task" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="datasets.sample_task.SampleTaskDataset">
+<em class="property">class </em><code class="sig-prename descclassname">datasets.sample_task.</code><code class="sig-name descname">SampleTaskDataset</code><span class="sig-paren">(</span><em class="sig-param">group</em><span class="sig-paren">)</span><a class="headerlink" href="#datasets.sample_task.SampleTaskDataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.utils.data.dataset.Dataset</span></code></p>
+<p>The <a class="reference internal" href="#datasets.sample_task.SampleTaskDataset" title="datasets.sample_task.SampleTaskDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">SampleTaskDataset</span></code></a> is the sample PyTorch dataset (not Iterable Dataset) that I
+have created mainly for this mock project. Note that in complicated cases, batch sampling or
+even using the new <code class="xref py py-class docutils literal notranslate"><span class="pre">IterableDataset</span></code> class in PyTorch can make things a lot easier for us.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-datasets">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-datasets" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="clearer"></div>
+      </div>
+    </div>
+
+
+  </body>
+</html>

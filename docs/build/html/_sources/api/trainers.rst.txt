@@ -1,0 +1,22 @@
+trainers package
+================
+
+Submodules
+----------
+
+trainers.basic module
+---------------------
+
+.. automodule:: trainers.basic
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: trainers
+   :members:
+   :undoc-members:
+   :show-inheritance:

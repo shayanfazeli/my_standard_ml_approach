@@ -1,0 +1,26 @@
+
+
+Welcome to My Standard ML Approach's documentation!
+===================================================
+
+Welcome to the documentation!
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   api/datasets.rst
+   api/models.rst
+   api/modules.rst
+   api/my_ml_sample.rst
+   api/tests.rst
+   api/trainers.rst
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

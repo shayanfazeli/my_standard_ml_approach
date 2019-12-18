@@ -1,0 +1,7 @@
+my\_ml\_sample module
+=====================
+
+.. automodule:: my_ml_sample
+   :members:
+   :undoc-members:
+   :show-inheritance:
